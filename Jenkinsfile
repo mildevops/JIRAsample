@@ -6,5 +6,10 @@ pipeline {
         echo 'Sample pipeline'
       }
     }
+    stage('Build') {
+      steps {
+        sh 'build.xml'
+      }
+    }
   }
 }
